@@ -1,7 +1,10 @@
+'use client';
+
+
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from 'next/link'
-import Nav from './Nav/page'
+import Nav from './nav/page'
 import Gallery from "./gallery/page";
 
  

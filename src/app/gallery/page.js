@@ -1,8 +1,9 @@
 'use client';
 
+import { useState } from "react";
 import Image from "next/image";
-import styles from "../styles/gallery.css";
-import Search from "../Ui/search";
+import "../styles/gallery.css";
+import SearchParent from "../ui/SearchParent";
 
 const images = [
   { src: "/image1.jpg", alt: "Image 1" },
@@ -20,15 +21,32 @@ const images = [
   { src: "/image13.jpg", alt: "Image 13" },
 ];
 
+
+
+
 export default function Gallery() {
+
+  // const [value, setValue] = useState('')
+
+  // const handleClick =(event)=> {
+
+  //   setValue('Hi!')
+  // }
+
+
   return (
     <>
 
-  
+      {/* <button className="magnify" onClick={handleClick}>Press</button>
+      <p className="magnify">Pressed {value}</p> */}
+
+
+
       <div className="gallery">
         
       <div className ="searchBar">
-      <Search/>
+
+      <SearchParent/>
       
       </div>
 
