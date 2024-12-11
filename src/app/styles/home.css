@@ -1,0 +1,30 @@
+.title{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom:40px;
+   
+}
+
+.body{
+    background-image: url('/image3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    padding: 80px;
+    text-align: center;
+   
+}
+
+.body-wrapper{
+    padding-left:250px;
+    padding-right:250px;
+    padding-bottom:250px;
+    padding-top:60px;
+}
+
+.paragraph{
+    color: white;
+    padding:100px;
+}
