@@ -1,15 +1,16 @@
 'use client';
 
-import React, {useState} from "react";
-import Search from './search.js';
+import React, { useState } from 'react';
+import Search from './search';
 
-export default function SearchParent() {
-    const [searchTerm, setSearchTerm] = useState('Initial Value');
+export default function Parent() {
+  const [searchTerm, setSearchTerm] = useState(''); 
 
-    return (
-        <div>
-            <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        </div>
-    );
+  return (
+    <div>
+      <h1>Parent Component</h1>
+    
+      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+    </div>
+  );
 }
-
