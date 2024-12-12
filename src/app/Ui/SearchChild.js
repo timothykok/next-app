@@ -1,33 +1,26 @@
 'use client';
+import React, {useState} from 'react'
+import SearchGrandChild from './SearchGrandChild';
 
-export default function SearchChild({ searchTerm, setSearchTerm, test}) {
 
-  console.log('Props:', { searchTerm, setSearchTerm, test }); // Add this line
 
-  const handleOnChange = (event) => {
-    console.log("Running handle on change")
-    setSearchTerm(event.target.value);
-  }
+// props created to be used 
+export default function SearchChild() {
 
-  const handleOnClick = () => {
-    console.log("clicking")
-    setSearchTerm(() => 'Ive been hit');
-  }
 
+  
+  //each SearchGrandChild component only uses a particular set of props when called.
   return (
     <div className="searchBar">
-      <label> Search bar </label>
-      <input
-        type="text"
-        value={searchTerm} 
-        onChange={handleOnChange} 
-      />
-      <p className="p">
-        {searchTerm}
-      </p>
-      <button onClick={handleOnClick}>
-        Button 
-      </button>
+        <p> child </p>
+
+      
+        <SearchGrandChild/>
+        
     </div>
   );
 }
+
+
+//cond rendering 
+//useContext vs propDrilling 
