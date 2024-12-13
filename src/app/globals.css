@@ -39,3 +39,56 @@ main {
   flex-grow: 1;
   
 }
+
+
+.home-header{
+
+  padding:3rem;
+  font-size: 100px;
+  font-weight:800;
+  color:black;
+
+}
+
+.home-header-dark{
+  color:white;
+
+}
+
+
+
+
+
+
+.home-container{
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  border: 3px solid blue;
+ 
+  background-color: white;
+  height:1000px;
+  width: 100%;
+}
+
+.home-container-dark{
+  background-color: black;
+}
+
+.theme-button{
+
+  background-color: orange;
+  height: 40px;
+  width: 50px;
+
+}
+
+.card{
+  width: 500px;
+  height:600px;
+  border: solid 3px rgb(230, 6, 6);
+  margin: auto;
+  padding: 3rem;
+}
+
+
