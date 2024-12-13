@@ -6,6 +6,8 @@ import styles from "./styles/home.css";
 export default function Home() {
   return (
    
-     <></>
+     <>
+ 
+     </>
   );
 }

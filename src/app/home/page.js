@@ -6,14 +6,17 @@ import Button from "../ui/Button";
 import Card from "../ui/Card";
 import { useCallback } from "react";
 import { useTheme } from "../hooks/useTheme";
+import ToDoList from "../ui/ToDoList";
 
 
 //defining the home component
 export default function Home() {
 
-//declaring theme variables that this component uses 
+//declaring theme variables that this component uses - custom hook 
 const {theme, setTheme, changeTheme} = useTheme();
 
+
+  //conditional className
   return (
     <>
       <div className={`home-container ${theme === "dark" && "home-container-dark"}`}>
@@ -23,6 +26,8 @@ const {theme, setTheme, changeTheme} = useTheme();
 
         {/* consumes/uses the prop(this one is a function prop) ("calling") */} 
         <Button clickHandler={changeTheme} /> 
+        <ToDoList/>
+        
 
       </div>
 
@@ -30,3 +35,5 @@ const {theme, setTheme, changeTheme} = useTheme();
     </>
   );
 }
+
+

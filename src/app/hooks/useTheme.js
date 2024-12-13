@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 
-
+//create a context 
 const ThemeContext = createContext();
 
 
